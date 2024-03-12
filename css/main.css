@@ -1,0 +1,178 @@
+@import "reset.css";
+
+/*
+  ========================================
+  Basic styles  
+  ========================================
+*/
+body {
+	font: 16px 'Open Sans', Arial, sans-serif;
+	color: #7f8c8d;
+	background: #ecf0f1;
+}
+
+/*
+  ========================================
+  Header  
+  ========================================
+*/
+.main-header {
+	text-align: center;
+	margin: 40px 0 40px;
+	border-bottom: 1px solid #e4e6e6;
+}
+h1 {
+	font-family: 'Baloo Paaji', cursive;
+	font-size: 60px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #16a085;
+}
+h1 em {
+	color: #dedede;
+}
+h2 {
+	margin-bottom: 40px;
+}
+
+/*
+  ========================================
+  Canvas  
+  ========================================
+*/
+.game-canvas {
+	width: 600px;
+	height: 300px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.user-choice ul {
+	overflow: auto;
+}
+.user-choice ul li {
+	display: block;
+	float: left;
+	width: 193px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	border: 1px solid #7f8c8d;
+	border-radius: 4px;
+	margin: 10px 10px 0 0;
+	transition: all .1s ease;
+}
+.user-choice ul li:last-child {
+	margin-right: 0;
+}
+.user-choice ul li:hover,
+.user-choice ul li.selected {
+	cursor: pointer;
+	background: #16a085;
+	color: #ecf0f1;
+	border-color: #16a085;
+}
+
+.choice-board {
+	opacity: 0;
+	float: left;
+	margin: 40px 0 0;
+}
+.choice-board.show {
+	transition: opacity .2s ease;
+}
+.choice-board p {
+	line-height: 1.8;
+}
+.choice-board p strong {
+	font-weight: 700;
+	color: #7f8c8d;
+}
+
+.result	{
+	opacity: 0;
+	float: right;
+	width: 300px;
+	height: 50px;
+	margin-top:	40px;
+	color: #fff;
+	font: 22px 'Baloo Paaji', cursive;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 4px;
+}
+.result.show 	 { transition: opacity .2s ease 1s; }
+.result.computer { background: #e74c3c; }
+.result.user     { background: #2ecc71; }
+.result.tie      { background: #7f8c8d; }
+
+.show {
+	opacity: 1;
+}
+
+.loader {
+	position: absolute;
+	bottom: 40px;
+	left: 0;
+	width: 0%;
+	height: 5px;
+	background: #16a085;
+	margin-top: 30px;
+}
+.loader.start {
+	width: 100%;
+	transition: width 2s linear 1s;
+}
+/*
+  ========================================
+  Score  
+  ========================================
+*/
+.game-score {
+	width: 600px;
+	margin: 0 auto;
+	overflow: auto;
+}
+.score-box {
+	float: left;
+	width: 300px;
+	text-align: center;
+}
+.score-box + .score-box {
+	float: right;
+}
+.title {
+	font-size: 22px;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+.score {
+	font: 62px 'Baloo Paaji', cursive;
+	color: #16a085;
+}
+
+/*
+  ========================================
+  Author  
+  ========================================
+*/
+.author {
+	margin: 50px auto;
+	text-align: center;
+	text-decoration: none;
+	font-size: 12px;
+	color: inherit;
+	display: block;
+	width: 200px;
+	padding: 10px 0;
+	border: 1px solid #ecf0f1;
+	border-radius: 4px;
+	transition: all .2s ease;
+}
+.author strong {
+	font-weight: 700;
+}
+.author:hover {
+	border: 1px solid #16a085;
+}

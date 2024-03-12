@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>J(s)okenpo</title>
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Paaji" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<!-- Header -->
+	<header class="main-header">
+		<h1>j<em>s</em>okenpô</h1>
+		<h2>a simple "rock, paper and scissor" game built with HTML, CSS and Javascript.</h2>
+	</header>
+
+	<!-- Game Canvas -->
+	<section class="game-canvas">
+		<div class="user-choice">
+			<p>What's your choice?</p>
+			<ul>
+				<li value="rock">Rock</li>
+				<li value="paper">Paper</li>
+				<li value="scissor">Scissor</li>
+			</ul>
+		</div>
+		<div class="choice-board">
+			<p>Computer chose <strong>scissor</strong></p>
+		</div>
+		<div class="result">Computer wins :(</div>
+
+		<div class="loader"></div>
+	</section>
+
+	<!-- Game Score -->
+	<section class="game-score">
+		<div class="score-box score-user">
+			<p class="title">You</p>
+			<p class="score">00</p>
+		</div>
+		<div class="score-box score-computer">
+			<p class="title">Computer</p>
+			<p class="score">00</p>
+		</div>
+	</section>
+
+	<a class="author" href="https://github.com/cauequeiroz/jsokenpo">Developed by <strong>Caue Queiroz</strong>.</a>
+
+	<!-- Engine -->
+	<script src="js/game.js"></script>
+</body>
+</html>

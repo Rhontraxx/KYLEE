@@ -1,6 +1,6 @@
 {
     "canisters": {
-        "KYLE": {
+        "KYLEE": {
             "frontend": {
                 "entrypoint": "src/index.html"
             },
